@@ -16,12 +16,12 @@ function Article ({title, date="January 1, 1970", preview, coffeecup, min}) {
 function coffeeCups (min){
     if(min<30){
         for( let j=0; j< (Math.round(min/5)); j++) {
-            return <span>☕️</span>
+            return '☕️'.repeat(Math.round(min/5))
         }
     }
     else if(min>30) {
         for(let f=0; f<(Math.round(min/10)); f++){
-        return <span>🍱</span>
+        return '🍱'.repeat(Math.round(min/10))
         }
 
     }
